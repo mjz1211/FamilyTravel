@@ -1,8 +1,8 @@
-<h3>Team</h3>Innovation Buddy
+<h1>Team</h1>Innovation Buddy
 
-<b>Work product</b>：FamilyTravel
+<h1>Work product</h1>FamilyTravel
 
-<b>Functions</b>:
+<h1>Functions</h1>:
 <ul>
 <li>Plan(規劃行程)</li>
 <li>Preiview(預覽行程)</li>
@@ -10,9 +10,9 @@
 <li>Compare(比較行程)</li>
 </ul>
 
-WebSite: https://familytravel.azurewebsites.net/
+<h1>WebSite</h1> https://familytravel.azurewebsites.net/
 
-<b>Open Data</b>：
+<h1>Open Data</h1>：
 <table>
 <thead>
 <tr>
@@ -42,7 +42,7 @@ WebSite: https://familytravel.azurewebsites.net/
 </tr>
 </table>
 
-Bonus：
+<h1>Bonus</h1>
 
 We also create the data API to delivery weather and AQI information, client just need input two parameters to the API and get the JSON format information.
 
