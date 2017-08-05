@@ -4,10 +4,10 @@
 
 <h1>Functions</h1>
 <ul>
-<li>Plan(規劃行程)</li>
-<li>Preiview(預覽行程)</li>
-<li>PlnaB(行程備案)</li>
-<li>Compare(比較行程)</li>
+<li>Plan(規劃行程)：輕鬆選擇景點，預覽天氣，規劃行程。</li>
+<li>Preiview(預覽行程)：預覽行程天氣提示，行程路線、景點與景色動畫。</li>
+<li>PlnaB(行程備案)：依天氣狀況可自動或手動建立行程備案。</li>
+<li>Compare(比較行程)：比較各行程的天氣、景點、距離、時間與交通費用。</li>
 </ul>
 
 <h1>Open Data</h1>
