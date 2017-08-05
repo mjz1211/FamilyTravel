@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "CWB";
+}
+
+<h2>CWB</h2>
+
+<script type="text/javascript">
+
+    /*
+    function loadJson(url) {
+        $.ajax({
+            url: url,
+            method: "GET",
+            dataType: "jsonp",
+            //crossDomain: true,
+            contentType: "application/x-www-form-urlencoded",
+            data: { locationName: "大安區", Authorization: "CWB-AC9EB733-E679-42D8-8533-82291A93E58D", callback: "?" },
+            */
+            //cache: false,
+            //beforeSend: function (xhr) {
+                /* Authorization header */
+                //xhr.setRequestHeader("Authorization", "CWB-AC9EB733-E679-42D8-8533-82291A93E58D");
+                //xhr.setRequestHeader("X-Mobile", "false");
+            //},
+    /*
+            headers: {
+                "Authorization": "CWB-AC9EB733-E679-42D8-8533-82291A93E58D"
+             
+            },
+            
+            success: function (data) {
+                $('#result').append(data);
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                $('#result').append(textStatus);
+                $('#result').append(errorThrown);
+
+            }
+        });
+    }
+    */
+    var cwbUrl = "https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-063?callback=?&Authorization=CWB-AC9EB733-E679-42D8-8533-82291A93E58D&locationName=大安區";
+
+
+
+    $.ajax({
+        url: '/Lab/Poll',
+        method: "GET",
+        timeout: 1800000, //30 mins
+        success: function (data) {
+            $('#result').append(data);
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            $('#result').append(textStatus);
+            $('#result').append(errorThrown);
+
+        }
+    });
+
+</script>
+
+<div id="result">Loading...</div>

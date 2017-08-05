@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ac58c505968b40d9b1977a817ecf4a5f" Name="Diagram1">
+        <EntityTypeShape EntityType="openTCLModel.ShareTravelPackage" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="openTCLModel.ShareTravelPlace" Width="3.625" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="openTCLModel.CWDUVI" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="openTCLModel.CWDWeatherDescription" Width="1.5" PointX="2.75" PointY="4.75" />
+        <EntityTypeShape EntityType="openTCLModel.CWBCityRegionLocation" Width="1.5" PointX="5.375" PointY="4.75" />
+        <EntityTypeShape EntityType="openTCLModel.EPAAQI" Width="1.5" PointX="7.375" PointY="0.75" />
+        <EntityTypeShape EntityType="openTCLModel.EPACityRegionLocation" Width="1.5" PointX="5.375" PointY="7.75" />
+        <EntityTypeShape EntityType="openTCLModel.AllFeedingRoom" Width="1.5" PointX="7.375" PointY="6.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

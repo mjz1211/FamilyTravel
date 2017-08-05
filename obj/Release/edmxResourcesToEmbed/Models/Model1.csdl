@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="openTCLModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ShareTravelPackage">
+    <Key>
+      <PropertyRef Name="STP_Id" />
+    </Key>
+    <Property Name="STP_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PackageName" Type="String" MaxLength="140" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Memo" Type="String" MaxLength="140" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TravelDateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Places" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ShareTravelPlace">
+    <Key>
+      <PropertyRef Name="STP_Id" />
+    </Key>
+    <Property Name="STP_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Place_Id" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PlaceName" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Image" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Rating" Type="Double" Nullable="false" />
+    <Property Name="Lat" Type="Double" Nullable="false" />
+    <Property Name="Lng" Type="Double" Nullable="false" />
+    <Property Name="PType" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="openTCLEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ShareTravelPackage" EntityType="Self.ShareTravelPackage" />
+    <EntitySet Name="ShareTravelPlace" EntityType="Self.ShareTravelPlace" />
+    <EntitySet Name="CWDUVI" EntityType="openTCLModel.CWDUVI" />
+    <EntitySet Name="CWDWeatherDescription" EntityType="openTCLModel.CWDWeatherDescription" />
+    <EntitySet Name="CWBCityRegionLocation" EntityType="openTCLModel.CWBCityRegionLocation" />
+    <EntitySet Name="EPAAQI" EntityType="openTCLModel.EPAAQI" />
+    <EntitySet Name="EPACityRegionLocation" EntityType="openTCLModel.EPACityRegionLocation" />
+    <EntitySet Name="AllFeedingRoom" EntityType="openTCLModel.AllFeedingRoom" />
+  </EntityContainer>
+  <EntityType Name="CWDUVI">
+    <Key>
+      <PropertyRef Name="WD_Id" />
+    </Key>
+    <Property Name="WD_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="City" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Region" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="RLat" Type="Double" Nullable="false" />
+    <Property Name="RLng" Type="Double" Nullable="false" />
+    <Property Name="StartTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EndTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifyTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UVI" Type="Int32" Nullable="false" />
+    <Property Name="Exposure" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="CWDWeatherDescription">
+    <Key>
+      <PropertyRef Name="WD_Id" />
+    </Key>
+    <Property Name="WD_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="City" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Region" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="RLat" Type="Double" Nullable="false" />
+    <Property Name="RLng" Type="Double" Nullable="false" />
+    <Property Name="StartTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EndTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifyTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Weather" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Rain" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Temp" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Wind" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Humidity" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="CWBCityRegionLocation">
+    <Key>
+      <PropertyRef Name="CRL_Id" />
+    </Key>
+    <Property Name="CRL_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="City" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Region" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="RLat" Type="Double" Nullable="false" />
+    <Property Name="RLng" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EPAAQI">
+    <Key>
+      <PropertyRef Name="AQI_Id" />
+    </Key>
+    <Property Name="AQI_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="City" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Region" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="RLat" Type="Double" Nullable="false" />
+    <Property Name="RLng" Type="Double" Nullable="false" />
+    <Property Name="AQI" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Pollutant" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SO2" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CO" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CO_8hr" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="O3" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="O3_8hr" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PM10" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PM25" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="NO2" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="NOx" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="NO" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="WindSpeed" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="WindDirec" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PublishTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="PM25_AVG" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PM10_AVG" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="EPACityRegionLocation">
+    <Key>
+      <PropertyRef Name="CRL_Id" />
+    </Key>
+    <Property Name="CRL_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="City" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Region" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="RLat" Type="Double" Nullable="false" />
+    <Property Name="RLng" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AllFeedingRoom">
+    <Key>
+      <PropertyRef Name="cp_id" />
+    </Key>
+    <Property Name="cp_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="address" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="tel" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="opentime" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="note" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="lat" Type="Double" Nullable="false" />
+    <Property Name="lng" Type="Double" Nullable="false" />
+    <Property Name="distance" Type="Double" />
+  </EntityType>
+</Schema>

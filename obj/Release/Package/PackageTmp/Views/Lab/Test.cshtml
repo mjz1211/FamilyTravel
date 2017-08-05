@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Test";
+    string temp = "溫度攝氏28至32度";
+    string humidity = "相對濕度為74%";
+    string rain = "降雨機率70%";
+    string temp3 = "20 - 33";
+
+    string temp2 = temp.Substring(7, 2);
+
+    temp = temp.Substring(4, 2);
+
+    humidity = humidity.Substring(5, 2);
+
+    rain = rain.Substring(4, 2);
+}
+
+<h2>Test</h2>
+
+@temp
+<br/>
+@temp2
+<br />
+@humidity
+<br/>
+@temp3.Substring(temp3.IndexOf("-") + 2,2)
+<br/>
+@temp3.Substring(0,2)

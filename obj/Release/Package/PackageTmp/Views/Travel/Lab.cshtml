@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "Lab";
+}
+
+<h2>Lab</h2>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1795636863794920',
+      xfbml      : true,
+      version    : 'v2.9'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-like"
+     data-share="true"
+     data-width="450"
+     data-show-faces="true">
+</div>
+
+<div class="page-header">
+    <h1>Mobile Web Share Dialog</h1>
+</div>
+
+<p>Run this code on a mobile device or emulator. Tap the button below to trigger a Share Dialog</p>
+
+<div id="shareBtn" class="btn btn-success clearfix">Share</div>
+
+<p style="margin-top: 50px">
+    <hr />
+    <a class="btn btn-small" href="https://sharetravel01.azurewebsites.net/">Share Dialog Documentation</a>
+</p>
+
+<script>
+document.getElementById('shareBtn').onclick = function() {
+  FB.ui({
+    method: 'share',
+    mobile_iframe: true,
+    href: 'https://sharetravel01.azurewebsites.net/Travel/PackageSlide?PackageName=%E5%8F%B0%E5%8D%97%E5%85%A8%E5%AE%B6%E7%8E%A9%E4%B8%80%E5%A4%8F&slideTheme=black.css#/',
+  }, function(response){});
+}
+</script>

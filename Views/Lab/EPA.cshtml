@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "EPA";
+}
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8evo6K_89ZLTKCq4sJVG-RCQfjIqLa2c&libraries=places"></script>
+
+<h2>EPA</h2>
+<script type="text/javascript">
+
+    var geocoder = new google.maps.Geocoder();
+
+    var aqiArr;
+
+    var address;
+
+    $.ajax({
+        url: '/Lab/PollAQI',
+        method: "GET",
+        timeout: 1800000, //30 mins
+        success: function (data) {
+            
+            aqiArr = jQuery.parseJSON(data);
+            $('#result').append(data);
+
+            for (var i = 0, len = aqiArr.length ; i < len ; i++)
+            {
+                //console.log();
+                address = aqiArr[i].City + aqiArr[i].Region;
+               
+            }
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            $('#result').append(textStatus);
+            $('#result').append(errorThrown);
+
+        }
+    });
+
+
+    function geocodeAddress(geocoder) {
+        
+        geocoder.geocode({ 'address': address }, function (results, status) {
+            if (status === 'OK') {
+                //console.log(results[0].geometry.location.lat());
+                //console.log(results[0].geometry.location.lng());
+                lat = results[0].geometry.location.lat();
+                lng = results[0].geometry.location.lng();
+                $('#result').append(address + ',' + lat + ',' + lng);
+
+
+            } else {
+                alert('Geocode was not successful for the following reason: ' + status);
+            }
+        });
+    }
+</script>
+<div id="result">Loading...</div>

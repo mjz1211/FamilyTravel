@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="openTCLModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AllFeedingRoom">
+    <Key>
+      <PropertyRef Name="cp_id" />
+    </Key>
+    <Property Name="cp_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="address" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="tel" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="opentime" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="note" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="lat" Type="float" Nullable="false" />
+    <Property Name="lng" Type="float" Nullable="false" />
+    <Property Name="distance" Type="float" />
+  </EntityType>
+  <EntityType Name="CWBCityRegionLocation">
+    <Key>
+      <PropertyRef Name="CRL_Id" />
+    </Key>
+    <Property Name="CRL_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="City" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Region" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="RLat" Type="float" Nullable="false" />
+    <Property Name="RLng" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CWDUVI">
+    <Key>
+      <PropertyRef Name="WD_Id" />
+    </Key>
+    <Property Name="WD_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="City" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Region" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="RLat" Type="float" Nullable="false" />
+    <Property Name="RLng" Type="float" Nullable="false" />
+    <Property Name="StartTime" Type="datetime" Nullable="false" />
+    <Property Name="EndTime" Type="datetime" Nullable="false" />
+    <Property Name="ModifyTime" Type="datetime" Nullable="false" />
+    <Property Name="UVI" Type="int" Nullable="false" />
+    <Property Name="Exposure" Type="varchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CWDWeatherDescription">
+    <Key>
+      <PropertyRef Name="WD_Id" />
+    </Key>
+    <Property Name="WD_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="City" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Region" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="RLat" Type="float" Nullable="false" />
+    <Property Name="RLng" Type="float" Nullable="false" />
+    <Property Name="StartTime" Type="datetime" Nullable="false" />
+    <Property Name="EndTime" Type="datetime" Nullable="false" />
+    <Property Name="ModifyTime" Type="datetime" Nullable="false" />
+    <Property Name="Weather" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Rain" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Temp" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Status" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Wind" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Humidity" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EPAAQI">
+    <Key>
+      <PropertyRef Name="AQI_Id" />
+    </Key>
+    <Property Name="AQI_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="City" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Region" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="RLat" Type="float" Nullable="false" />
+    <Property Name="RLng" Type="float" Nullable="false" />
+    <Property Name="AQI" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Pollutant" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Status" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="SO2" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CO" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CO_8hr" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="O3" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="O3_8hr" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="PM10" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="PM25" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="NO2" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="NOx" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="NO" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="WindSpeed" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="WindDirec" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="PublishTime" Type="datetime" Nullable="false" />
+    <Property Name="PM25_AVG" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="PM10_AVG" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EPACityRegionLocation">
+    <Key>
+      <PropertyRef Name="CRL_Id" />
+    </Key>
+    <Property Name="CRL_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="City" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Region" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="RLat" Type="float" Nullable="false" />
+    <Property Name="RLng" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ShareTravelPackage">
+    <Key>
+      <PropertyRef Name="STP_Id" />
+    </Key>
+    <Property Name="STP_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PackageName" Type="varchar" MaxLength="140" Nullable="false" />
+    <Property Name="Memo" Type="varchar" MaxLength="140" Nullable="false" />
+    <Property Name="TravelDateTime" Type="datetime" Nullable="false" />
+    <Property Name="Places" Type="varchar" MaxLength="2000" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ShareTravelPlace">
+    <Key>
+      <PropertyRef Name="STP_Id" />
+    </Key>
+    <Property Name="STP_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Place_Id" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="PlaceName" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="Address" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="Image" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="Rating" Type="float" Nullable="false" />
+    <Property Name="Lat" Type="float" Nullable="false" />
+    <Property Name="Lng" Type="float" Nullable="false" />
+    <Property Name="PType" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="openTCLModelStoreContainer">
+    <EntitySet Name="AllFeedingRoom" EntityType="Self.AllFeedingRoom" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CWBCityRegionLocation" EntityType="Self.CWBCityRegionLocation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CWDUVI" EntityType="Self.CWDUVI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CWDWeatherDescription" EntityType="Self.CWDWeatherDescription" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EPAAQI" EntityType="Self.EPAAQI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EPACityRegionLocation" EntityType="Self.EPACityRegionLocation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ShareTravelPackage" EntityType="Self.ShareTravelPackage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ShareTravelPlace" EntityType="Self.ShareTravelPlace" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
