@@ -10,8 +10,6 @@
 <li>Compare(比較行程)</li>
 </ul>
 
-<h1>WebSite</h1> https://familytravel.azurewebsites.net/
-
 <h1>Open Data</h1>
 <table>
 <thead>
@@ -43,9 +41,11 @@
 </tr>
 </table>
 
+<h1>WebSite</h1> https://familytravel.azurewebsites.net/
+
 <h1>Bonus</h1>
 
-We also create the data API to delivery weather and AQI information, client just need input two parameters to the API and get the JSON format information.
+We also create the data API to provide the information of weather and air quality for latitude and longitude 
 
 https://familytravel.azurewebsites.net/Lab/QueryWeather?uLat=25.039811&uLng=121.513786
 
