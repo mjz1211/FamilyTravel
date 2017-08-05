@@ -1,6 +1,6 @@
-<h1>Team</h1><b>Innovation Buddy</b>
+<h1>Team</h1>Innovation Buddy
 
-<h1>Work product</h1><b>FamilyTravel</b>
+<h1>Work product</h1>FamilyTravel
 
 <h1>Functions</h1>
 <ul>
@@ -9,8 +9,6 @@
 <li>PlnaB(行程備案)</li>
 <li>Compare(比較行程)</li>
 </ul>
-
-<h1>WebSite</h1> https://familytravel.azurewebsites.net/
 
 <h1>Open Data</h1>
 <table>
@@ -35,17 +33,22 @@
 <td>Environmental Protection Administration, Executive Yuan</td><td>Air Quality Index(AQI)</td><td>https://opendata.epa.gov.tw/webapi/api/rest/datastore/355000000I-000259?sort=SiteName&offset=0&limit=1000</td>
 </tr>
 <tr>
-<td>衛福部</td><td>All Nursey Rooms</td><td>http://data.gov.tw/node/30622</td>
+<td>Health Promotion Administration,M.O.H.W.
+</td><td>All Nursey Rooms</td><td>http://data.gov.tw/node/30622</td>
 </tr>
 <tr>
 <td>Google</td><td>Maps, Places, Routing Info</td><td>http://maps.google.com</td>
 </tr>
 </table>
 
+<h1>WebSite</h1> https://familytravel.azurewebsites.net/
+
 <h1>Bonus</h1>
 
-We also create the data API to delivery weather and AQI information, client just need input two parameters to the API and get the JSON format information.
+We also create the data API to provide the information of weather and air quality for latitude and longitude 
 
 https://familytravel.azurewebsites.net/Lab/QueryWeather?uLat=25.039811&uLng=121.513786
+
+Designed by RWD ( Responsive Web Design ) work on iOS and Android devices. 
 
 
