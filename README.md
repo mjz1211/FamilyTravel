@@ -49,6 +49,6 @@ We also create the data API to provide the information of weather and air qualit
 
 https://familytravel.azurewebsites.net/Lab/QueryWeather?uLat=25.039811&uLng=121.513786
 
-Designed by RWD ( Responsive Web Design ) work on iOS and Android devices. 
+Designed by RWD ( Responsive Web Design ) makes FamilyTravel look good on all devices (desktops, tablets, and phones)
 
 
