@@ -1,8 +1,8 @@
-<h1>Team</h1>Innovation Buddy
+<h1>Team</h1><b>Innovation Buddy</b>
 
-<h1>Work product</h1>FamilyTravel
+<h1>Work product</h1><b>FamilyTravel</b>
 
-<h1>Functions</h1>:
+<h1>Functions</h1>
 <ul>
 <li>Plan(規劃行程)</li>
 <li>Preiview(預覽行程)</li>
@@ -12,7 +12,7 @@
 
 <h1>WebSite</h1> https://familytravel.azurewebsites.net/
 
-<h1>Open Data</h1>：
+<h1>Open Data</h1>
 <table>
 <thead>
 <tr>
