@@ -1,4 +1,4 @@
-<h1>Team</h1>：Innovation Buddy
+<h3>Team</h3>Innovation Buddy
 
 <b>Work product</b>：FamilyTravel
 
