@@ -1,8 +1,8 @@
-Team：Innovation Buddy
+#Work product：FamilyTravel
 
-Product: FamilyTravel
+<b>Team</b>：Innovation Buddy
 
-Functions:
+<b>Functions</b>:
 <ul>
 <li>Plan(規劃行程)</li>
 <li>Preiview(預覽行程)</li>
@@ -12,7 +12,7 @@ Functions:
 
 WebSite: https://familytravel.azurewebsites.net/
 
-Open Data：
+<b>Open Data</b>：
 <table>
 <thead>
 <tr>
