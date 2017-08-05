@@ -1,5 +1,17 @@
 Team：Innovation Buddy
 
+Product: FamilyTravel
+
+Functions:
+<ul>
+<li>Plan(規劃行程)</li>
+<li>Preiview(預覽行程)</li>
+<li>PlnaB(行程備案)</li>
+<li>Compare(比較行程)</li>
+</ul>
+
+WebSite: https://familytravel.azurewebsites.net/
+
 Open Data：
 <table>
 <thead>
@@ -34,5 +46,6 @@ Bonus：
 
 We also create the data API to delivery weather and AQI information, client just need input two parameters to the API and get the JSON format information.
 
+https://familytravel.azurewebsites.net/Lab/QueryWeather?uLat=25.039811&uLng=121.513786
 
 
