@@ -18,26 +18,38 @@
 </tr>
 </thead>
 <tr>
-<td>Tourism Bureau, M.O.T.C</td><td>Attractions</td><td>http://data.gov.tw/node/7777</td>
+<td>Tourism Bureau, M.O.T.C(交通部觀光局)</td><td>Attractions</td><td>http://data.gov.tw/node/7777</td>
 </tr>
 <tr>
-<td>Tourism Bureau, M.O.T.C</td><td>Restaurant</td><td>http://data.gov.tw/node/7779</td>
+<td>Tourism Bureau, M.O.T.C(交通部觀光局)</td><td>Restaurant</td><td>http://data.gov.tw/node/7779</td>
 </tr>
 <tr>
-<td>Tourism Bureau, M.O.T.C</td><td>Hotel and B&B</td><td>http://data.gov.tw/node/7780</td>
+<td>Tourism Bureau, M.O.T.C(交通部觀光局)</td><td>Hotel and B&B</td><td>http://data.gov.tw/node/7780</td>
 </tr>
 <tr>
-<td>Central Weather Bureau, M.O.T.C</td><td>Township weather forecast</td><td>https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-091</td>
+<td>Central Weather Bureau, M.O.T.C(交通部氣象局)</td><td>Township weather forecast</td><td>https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-091</td>
 </tr>
 <tr>
-<td>Environmental Protection Administration, Executive Yuan</td><td>Air Quality Index(AQI)</td><td>https://opendata.epa.gov.tw/webapi/api/rest/datastore/355000000I-000259?sort=SiteName&offset=0&limit=1000</td>
+<td>Environmental Protection Administration, Executive Yuan(行政院環保署)</td><td>Air Quality Index(AQI)</td><td>https://opendata.epa.gov.tw/webapi/api/rest/datastore/355000000I-000259?sort=SiteName&offset=0&limit=1000</td>
 </tr>
 <tr>
-<td>Health Promotion Administration,M.O.H.W.
+<td>Health Promotion Administration,M.O.H.W.(衛生福利部國民健康署)
 </td><td>All Nursey Rooms</td><td>http://data.gov.tw/node/30622</td>
 </tr>
 <tr>
-<td>Google</td><td>Maps, Places, Routing Info</td><td>http://maps.google.com</td>
+<td>Google</td><td>Places API</td><td>https://developers.google.com/places/?hl=zh-tw</td>
+</tr>
+<tr>
+<td>Google</td><td>MAP API</td><td>https://developers.google.com/maps/?hl=zh-tw</td>
+</tr>
+<tr>
+<td>Google</td><td>Routing API</td><td>https://developers.google.com/maps/documentation/directions/?hl=zh-tw</td>
+</tr>
+<tr>
+<td>Google</td><td>Street API</td><td>https://developers.google.com/maps/documentation/streetview/?hl=zh-tw</td>
+</tr>
+<tr>
+<td>Google</td><td>Street API</td><td>https://developers.google.com/maps/documentation/streetview/?hl=zh-tw</td>
 </tr>
 </table>
 
