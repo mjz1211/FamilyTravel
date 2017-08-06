@@ -10,11 +10,11 @@
 <li>Compare(比較行程)：比較各行程的天氣、景點、距離、時間與交通費用。</li>
 </ul>
 
-<h1>Open Data</h1>
+<h1>Open Data & API</h1>
 <table>
 <thead>
 <tr>
-<td>Institution</td><td>Dataset name</td><td>Link of dataset</td>
+<td>Institution</td><td>Dataset name</td><td>Link of dataset & API</td>
 </tr>
 </thead>
 <tr>
