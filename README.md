@@ -49,7 +49,7 @@
 <td>Google</td><td>Street API</td><td>https://developers.google.com/maps/documentation/streetview/?hl=zh-tw</td>
 </tr>
 <tr>
-<td>Google</td><td>Street API</td><td>https://developers.google.com/maps/documentation/streetview/?hl=zh-tw</td>
+<td>Google</td><td>Elevation API</td><td>https://developers.google.com/maps/documentation/elevation/intro?hl=zh-tw</td>
 </tr>
 </table>
 
